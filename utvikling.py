@@ -35,22 +35,32 @@ print (ord[0])
 print (ord[3:8])
 print (ord[::-1])
 
-
-    løkker 
     
 alder = int(input("Hvor gammel er du? "))
 if alder >= 18:
     print("Du er gammle nok til å stemme!")
 else:
-"""
-"""
-alder = 25
+
+
+print("Her kan du sjekke om du kan kjøre bil!")
+
+alder = int(input("Hvor gammel er du? "))
 har_lappen = True
 
 if alder >= 18 and har_lappen:
+    print("DU KAN KJØRE BIL!")
+else:
+    print("Du kan ikke kjøre bil !")
+
+er_regn = False
+if not er_regn:
+    print("Vi kan gå ut")
+else: 
+    print("Vi kan ikke gå ut :( ")
 
 """
 
+def presenter(navn, alder):
+    print(f"Jeg heter {navn} og er {alder} år gammel! ")
 
-ord = "PROGRAMMERING"   
-print (ord[0:3])
+presenter ("Kari", 23)
